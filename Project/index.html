@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uttrakhandtourism</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@1,700&family=Josefin+Sans:wght@700&family=Libre+Baskerville:ital@0;1&family=Pacifico&family=Play&family=Space+Grotesk:wght@300&display=swap"
+        rel="stylesheet">
+        
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .heading_temple h1 {
+        font-style: normal;
+        font-size: 68px;
+        color: #330000;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Libre Baskerville', serif;
+        font-family: 'Pacifico', cursive;
+        font-family: 'Play', sans-serif;
+        font-family: 'Space Grotesk', sans-serif;
+        /* display: inline-block; */
+    }
+/* 
+    .HOME {
+        font-weight: bold;
+    } */
+
+    .btn-search {
+        font-weight: bold;
+        border: 1px solid rgb(83, 85, 83);
+        color: black;
+    }
+
+    .row {
+        padding-top: 20px;
+    }
+
+    .clm {
+        float: left;
+        width: 33.33%;
+        padding: 3px;
+    }
+
+    .clm img {
+        height: 300px;
+        /* margin: 8px 8px 8px 8px;
+        padding: 8px 8px 8px 8px; */
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    body{
+        background-color: rgb(182, 240, 221);
+    }
+    @media(min-width:319px) and (max-width:480px)
+    {
+        body
+        {
+            background-color:rgb(240, 191, 172);
+        }
+    }
+
+    @media(min-width:481px) and (max-width:1200px)
+    {
+       body
+       {
+           background-color:powderblue;
+       }
+    }
+    @media(min-width:1201px) and (max-width:1600px)
+    {
+        body
+        {
+            background-color:rgb(212, 240, 212);
+        }
+    }
+    @media(min-width:1601px)
+    {
+        body
+        {
+            background-color:rgb(244, 163, 163);
+        }
+    }
+</style>
+
+<body>
+    <div class="navbar_menu">
+        <nav class="navbar navbar-expand-lg bg-primary-subtle demo">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img style="width: 200px; background-color: rgb(83, 76, 76);"
+                        src="/Assignments/Project/Project_image/UTDB logo_1.png" alt="UTDB"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active HOME" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                DESTINATION
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="https://www.euttaranchal.com/tourism/hill-stations-in-uttarakhand.php">Hill
+                                        Stations</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://traveltriangle.com/blog/adventure-sports-in-uttarakhand/">Adventure</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.tripadvisor.in/Attractions-g297686-Activities-c57-Uttarakhand.html">Nature</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.euttaranchal.com/tourism/wildlife-tours-uttarakhand.php">Wildlife</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://www.sacredyatra.com/">Char Dham</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                EXPERIENCE
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Events</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Festivals & Fairs</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Film Tourism</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Yoga & Wellness</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                PLAN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Accommodations</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Itineraries</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Treks</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Tourism Circuits</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Tourist Guide</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Travel Agents</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HOTELS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="https://www.euttaranchal.com/hotels/hotels-in-pauri-garhwal.php">Pauri
+                                        Garhwal Hotels</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.euttaranchal.com/hotels/hotels-in-mussoorie.php">Mussoorie
+                                        Hotels</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.euttaranchal.com/hotels/hotels-in-corbett-national-park.php">Corbet
+                                        Hotels</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.euttaranchal.com/hotels/hotels-in-nainital.php">Nanital
+                                        Hotels</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.euttaranchal.com/hotels/hotels-in-rishikesh.php">Rishikesh
+                                        Hotels</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.euttaranchal.com/hotels/hotels-in-haridwar.php">Haridwar
+                                        Hotels</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.euttaranchal.com/hotels/hotels-in-lansdowne.php">Lansdowne
+                                        Hotels</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.euttaranchal.com/hotels/hotels-in-kausani.php">Kausani
+                                        Hotels</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.euttaranchal.com/hotels/hotels-in-ranikhet.php">Ranikhet
+                                        Hotels</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.euttaranchal.com/hotels/hotels-in-badrinath.php">Badrinath
+                                        Hotels</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.euttaranchal.com/hotels/hotels-in-kedarnath.php">Kedarnath
+                                        Hotels</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.euttaranchal.com/hotels/hotels-in-chakrata.php">Chakrata
+                                        Hotels</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.euttaranchal.com/hotels/hotels-in-uttarkashi.php">Uttarkhashi
+                                        Hotels</a></li>
+                                <li><a class="dropdown-item" href="https://www.hotelhimalayanparadise.com/">Jaunsar
+                                        Bawar Hotels</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                TRADE
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Homestay Listing</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Travel Trade Listing</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Homestay Registration</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Travel Trade Registration</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Invest in Uttrakhand Tourism</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                FAQ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Adventure TourismFAQ</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Destination FAQ</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Home Stay FAQ</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Places of Interest FAQ</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Religious Tourism FAQ</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Travel Trade FAQ</a></li>
+                                <li><a class="dropdown-item" href="https://www.tourmyindia.com/states/uttarakhand/festivals.html#:~:text=The%20state%20is%20seen%20celebrating,Dikar%20Puja%2C%20Olgi%20or%20Ghee">Trekking FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success btn-search" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="heading_temple">
+        <h1 style="font-weight: 900;">Famous Temples of Uttrakhand You Must Visit</h1>
+        <p style="font-size: 25px; justify-content:left; padding: 5px; margin: 5px;">उत्तराखंड को देवभूमि, या "देवताओं की भूमि" के रूप में जाना जाता है, क्योंकि यह कई हिंदू पवित्र स्थलों का घर है। इसके अलावा, उत्तराखंड को प्राचीन काल में देवभूमि के रूप में जाना जाता है, और वर्तमान में राज्य को भारत में देवभूमि उत्तराखंड के रूप में जाना जाता है। देवभूमि उत्तराखंड भी हिमालय क्षेत्र का हिस्सा है। देवभूमि उत्तराखंड के पर्वतीय क्षेत्र और घाटियाँ भी देवी-देवताओं का घर हैं। भारत की सबसे लंबी और पवित्र नदी गंगा, उत्तराखंड के उत्तरकाशी जिले में गंगोत्री ग्लेशियर से बहती है।</p>
+        <h2 style="text-align: center;">Browse through the List of Temples in Uttarakhand</h2>
+    </div>
+
+
+    <div class="row">
+        <div class="clm">
+            <h5><a href="/Assignments/Project/kedarnath.html"><img
+                        src="/Assignments/Project/Project_image/kedarnath.jpg" alt="kedarnath"
+                        width="100%">Kedarnath</a></h5>
+        </div>
+        <div class="clm">
+            <h5><a href="/Assignments/Project/badrinath.html"><img
+                        src="/Assignments/Project/Project_image/badrinath.webp" alt="badrinath"
+                        width="100%">Badrinath</a></h5>
+        </div>
+
+        <div class="clm">
+            <h5><a href="/Assignments/Project/gangotri.html"> <img
+                        src="/Assignments/Project/Project_image/gangotri.jpg" alt="gangotri" width="100%">Gangotri</a>
+            </h5>
+        </div>
+
+        <div class="clm">
+            <h5><a href="/Assignments/Project/yamnotri.html"><img
+                        src="/Assignments/Project/Project_image/dharchula.jpg" alt="Yamnotri" width="100%">Yamnotri</a>
+            </h5>
+        </div>
+
+        <div class="clm">
+            <h5><a href="/Assignments/Project/dhari-devi.html"><img
+                        src="/Assignments/Project/Project_image/dhari-devi-temple.jpg" alt="dhari-devi-temple"
+                        width="100%">Dhari Devi Temple</a></h5>
+        </div>
+
+        <div class="clm">
+            <h5><a href="https://en.wikipedia.org/wiki/Tungnath"><img
+                        src="/Assignments/Project/Project_image/tungnath.jpg" alt="Tungnath" width="100%">Tugnath</a>
+            </h5>
+        </div>
+
+        <div class="clm">
+            <h5><a href="https://en.wikipedia.org/wiki/Neelkanth_Mahadev_Temple_(Rishikesh)"><img
+                        src="/Assignments/Project/Project_image/neelkanth-mahadev-temple.webp" alt="neelkanth-mahadev-temple" width="100%">Neelkanth Mahadev</a>
+            </h5>
+        </div>
+
+        <div class="clm">
+            <h5><a href="https://en.wikipedia.org/wiki/Mansa_Devi_Temple,_Haridwar"><img
+                        src="/Assignments/Project/Project_image/mansa-devi-temple.jpg" alt="mansa-devi-temple" width="100%">Mansa Devi</a>
+            </h5>
+        </div>
+
+        <div class="clm">
+            <h5><a href="https://www.tripadvisor.in/Attraction_Review-g679053-d7352277-Reviews-Nanda_Devi_Temple-Almora_Almora_District_Uttarakhand.html"><img
+                        src="/Assignments/Project/Project_image/nanda-devi-munsiyari.jpg" alt="nanda-devi-munsiyari" width="100%">Nanda Devi</a>
+            </h5>
+        </div>
+
+        <div class="clm">
+            <h5><a href="https://www.euttaranchal.com/tourism/chitai-golu-devta-temple.php"><img
+                        src="/Assignments/Project/Project_image/chitai-golu-devta-temple.jpg" alt="chitai-golu-devta-temple" width="100%">Chitai Golu Devta</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://uttaranchalvillagesntowns.blogspot.com/2013/07/bhairav-garhi-temple-near-lansdowne.html"><img
+                        src="/Assignments/Project/Project_image/Bhairav Garhi.jpg" alt="Bhairav garhi" width="100%">Langoor Garhi Bhairav</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://en.wikipedia.org/wiki/Chandrashila"><img
+                        src="/Assignments/Project/Project_image/chandrashila.jpeg" alt="chandrashila" width="100%">Chandrashila</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://en.wikipedia.org/wiki/Devprayag"><img
+                        src="/Assignments/Project/Project_image/devprayag.jpg" alt="devprayag" width="100%">Devprayag</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://en.wikipedia.org/wiki/Rudraprayag"><img
+                        src="/Assignments/Project/Project_image/rudraprayag.webp" alt="rudraprayag" width="100%">Rudraprayag</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://en.wikipedia.org/wiki/Karnaprayag"><img
+                        src="/Assignments/Project/Project_image/karanprayag-chamoli.jpg" alt="karanprayag-chamoli" width="100%">Karanprayag</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://en.wikipedia.org/wiki/Nandaprayag"><img
+                        src="/Assignments/Project/Project_image/Nandprayag.jpeg" alt="Nandprayag" width="100%">Nandprayag</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://en.wikipedia.org/wiki/Vishnuprayag"><img
+                        src="/Assignments/Project/Project_image/Vishnuprayag.jpg" alt="Vishnuprayag" width="100%">Vishnuprayag</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="v"><img
+                        src="/Assignments/Project/Project_image/Gaurikund.jpg" alt="Gaurikund" width="100%">Gaurikund</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://en.wikipedia.org/wiki/Gopinath_Mandir"><img
+                        src="/Assignments/Project/Project_image/gopinath-temple.jpg" alt="gopinath-temple" width="100%">Gopinath-temple</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://www.euttaranchal.com/tourism/temples-in-haridwar.php"><img
+                        src="/Assignments/Project/Project_image/Haridwar .jpg" alt="Haridwar" width="100%">Haridwar</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://traveltriangle.com/blog/temples-in-rishikesh/"><img
+                        src="/Assignments/Project/Project_image/rishikesh34.jpg" alt="rishikesh" width="100%">Rishikesh</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://www.euttaranchal.com/tourism/narsingh-temple.php"><img
+                        src="/Assignments/Project/Project_image/Joshimath-narsingh-temple.jpg" alt="Joshimath-narsingh-temple" width="100%">Joshimath Narsingh Temple</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://www.euttaranchal.com/tourism/kalimath.php"><img
+                        src="/Assignments/Project/Project_image/Kalimath-Temple-Guptkashi.jpg" alt="Kalimath-Temple-Guptkashi" width="100%">Kalimath Temple Guptkashi</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://uttarakhandtourism.gov.in/destination/kartik-swami-temple"><img
+                        src="/Assignments/Project/Project_image/kartik-swami-temple.jpg" alt="kartik-swami-temple" width="100%">Kartik Swami Temple</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://en.wikipedia.org/wiki/Chandrabadani_Devi"><img
+                        src="/Assignments/Project/Project_image/Chandrabadni_Mandir.jpg" alt="Chandrabadni_Mandir" width="100%">Chandrabadni Mandir</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://en.wikipedia.org/wiki/Surkanda_Devi"><img
+                        src="/Assignments/Project/Project_image/surkanda.jpeg" alt="Surkanda_Devi_Mandir" width="100%">Surkanda Devi Mandir</a>
+            </h5>
+        </div>
+        <div class="clm">
+            <h5><a href="https://en.wikipedia.org/wiki/Ukhimath"><img
+                        src="/Assignments/Project/Project_image/Ukhimath.jpg" alt="Ukhimath" width="100%">Ukhimath</a>
+            </h5>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li style="font-weight: bolder;" class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li  style="font-weight: bolder;" class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Destination</a></li>
+            <li  style="font-weight: bolder;" class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Experience</a></li>
+            <li  style="font-weight: bolder;" class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li  style="font-weight: bolder;" class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            <li  style="font-weight: bolder; border: 1px solid black;" class="nav-item"><a href="/Assignments/Project/Project_image/Route-Map-for-Chardham-Yatra.jpg" class="nav-link px-2 text-body-secondary">Char-Dham-Yatra-Map</a></li>
+            <li  style="font-weight: bolder; border: 1px solid black; margin-left: 7px;" class="nav-item"><a href="/Assignments/Project/Project_image/uttarakhand-temples-map.jpg" class="nav-link px-2 text-body-secondary">Major-temples-Map</a></li>
+          </ul>
+          <p style="font-weight: bolder;" class="text-center text-body-secondary">© 2023 Gusain Company, Inc</p>
+          <p  style="font-weight: bolder;"class="text-center text-body-secondary">Gmail: <a href ="mailto: karansinghgusain1@gmail.com">karansinghgusain1@gmail.com</a></p>
+          <p  style="font-weight: bolder;"class="text-center text-body-secondary">Github: <a href="https://github.com/karansingh1820">https://github.com/karansingh1820</a></p>
+        </footer>
+    </div>  
+    <!-- <audio controls autoplay loop> 
+        <source src="/Assignments/Project/Song/drill.mp3" type="audio/mpeg"> 
+    </audio>  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
+</body>
+
+</html>
